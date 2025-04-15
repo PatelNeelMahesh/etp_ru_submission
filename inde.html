@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>End Term Practical Submission</title>
+  <style>
+    :root {
+      --primary: #2536a7;
+      --accent: #fcb700;
+      --bg-light: #f3f4f6;
+      --text-dark: #1f2937;
+      --text-muted: #6b7280;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 24px 16px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin-top: 4px;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 16px 10px;
+      background-color: white;
+    }
+
+    .tool {
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      font-weight: 500;
+      text-align: center;
+      width: 240px;
+    }
+
+    .tool:hover {
+      background-color: #1d2a85;
+    }
+
+    .tool small {
+      display: block;
+      font-weight: normal;
+      font-size: 0.85rem;
+      color: #d9dfff;
+      margin-top: 6px;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 30px auto;
+      padding: 24px;
+      background: white;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: var(--primary);
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: var(--accent);
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #e0a600;
+    }
+
+    iframe {
+      width: 100%;
+      height: 820px;
+      border: none;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 1000px;
+      }
+
+      .tool {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>End Term Practical Submission</h1>
+    <p>Secure Upload • No Login Required</p>
+  </header>
+
+  <!-- Online playground buttons with descriptions -->
+  <div class="tools">
+    <a href="https://codesandbox.io/s/new" target="_blank" class="tool">
+      React Online (CodeSandbox)
+      <small>Practice React components with live preview</small>
+    </a>
+    <a href="https://replit.com/new/nodejs" target="_blank" class="tool">
+      Node.js Online (Replit)
+      <small>Run backend JavaScript without installing Node.js</small>
+    </a>
+    <a href="https://mongoplayground.net/" target="_blank" class="tool">
+      MongoDB Playground
+      <small>Test MongoDB queries and aggregation pipelines</small>
+    </a>
+  </div>
+
+  <main>
+    <h2>📁 Submit Your Work (Folder Upload)</h2>
+    <ol>
+        <li>Prepare your <strong>entire project folder</strong> with all files and subfolders.</li>
+        <li>Make sure your folder includes:
+          <ul>
+            <li>All required files.</li>
+            <li>Assets like images, fonts, icons (if used).</li>
+            <li>Any external libraries (if not CDN-linked) or packages required for offline usage.</li>
+            <li>If using Node.js or any package manager, <strong>delete the <code>node_modules</code> folder</strong> before uploading your project folder. This is important to reduce upload size and prevent unnecessary files.</li>
+            <li>Name your folder using your UID and subject name. For example: <strong>12345-BackedWithNode</strong></li>
+          </ul>
+        </li>
+        <li>Click the button below to visit LimeWire. Upload your folder directly.</li>
+        <li>Once uploaded, <strong>copy the link</strong> generated for your uploaded folder.</li>
+        <li>Paste the link in the <strong>Google Form below</strong>, along with your name and other required details.</li>
+      </ol>
+      
+    <a href="https://limewire.com/" class="button" target="_blank">Upload Folder on LimeWire</a>
+
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLScjda9qEpTSR7xJ_DhIwU-GQow3hYGK058H-J1qEoWDdujZMQ/viewform?embedded=true" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </main>
+
+</body>
+</html>
